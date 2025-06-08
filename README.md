@@ -28,13 +28,13 @@ You need to prepare the following datasets before running RAREval:
    - The **5-core version**
    - The **original version** (no k-core filtering)
 
-   | Dataset              | Example Filename                          |
-   |----------------------|--------------------------------------------|
-   | Digital Music        | `reviews_Digital_Music_5.json`             |
-   | Musical Instruments  | `reviews_Musical_Instruments_5.json`      |
-   | Instant Video        | `reviews_Amazon_Instant_Video_5.json`     |
-   | Video Games          | `reviews_Video_Games_5.json`              |
-   | Electronics          | `reviews_Electronics_5.json`              |
-   | Books                | `reviews_Books_5.json`                    |
-   | Home and Kitchen     | `reviews_Home_and_Kitchen_5.json`         |
-   | Movies and TV        | `reviews_Movies_and_TV_5.json`            |
+   | Dataset                  | Example Filename                          |
+|--------------------------|--------------------------------------------|
+| Musical Instruments      | `reviews_Musical_Instruments_5.json`      |
+| Amazon Instant Video     | `reviews_Amazon_Instant_Video_5.json`     |
+| Office Products          | `reviews_Office_Products_5.json`          |
+| Digital Music            | `reviews_Digital_Music_5.json`            |
+| Video Games              | `reviews_Video_Games_5.json`              |
+| Health and Personal Care | `reviews_Health_and_Personal_Care_5.json` |
+| CDs and Vinyl            | `reviews_CDs_and_Vinyl_5.json`            |
+| Movies and TV            | `reviews_Movies_and_TV_5.json`            |
