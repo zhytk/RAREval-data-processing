@@ -15,7 +15,7 @@ RAREval is a standardized evaluation framework designed to assess the robustness
 
 ## 📦 Requirements
 
-Tested on Python 3.9
+Tested on Python 3.8
 
 1. [pandas](https://pypi.org/project/pandas/) ≥ 1.5  
 2. [numpy](https://pypi.org/project/numpy/) ≥ 1.23
