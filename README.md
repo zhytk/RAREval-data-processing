@@ -9,3 +9,32 @@ RAREval is a standardized evaluation framework designed to assess the robustness
 - **Distortion**: Reassigns reviewText among user-item pairs (0%，25%, 50%, 75%, 100%)  
 - **Data Sparsity**: Applies k-core filtering and splits into train/valid/test
 - **Cold-Start**: Evaluates performance across user groups with 1–10 historical interactions (no preprocessing required)
+## Requirements
+
+Tested on Python 3.9
+
+1. [pandas](https://pypi.org/project/pandas/) >= 1.5  
+2. [numpy](https://pypi.org/project/numpy/) >= 1.23
+
+## Dataset
+
+You need to prepare the following datasets before running RAREval:
+
+1. **Amazon Review Data**  
+   Download from the official Amazon data page:  
+   🔗 [https://cseweb.ucsd.edu/~jmcauley/datasets/amazon/links.html](https://cseweb.ucsd.edu/~jmcauley/datasets/amazon/links.html)  
+
+   Please download the following **eight domains**, including:
+   - The **5-core version**
+   - The **raw/original version** (no k-core filtering)
+
+   | Dataset              | Example Filename                          |
+   |----------------------|--------------------------------------------|
+   | Digital Music        | `reviews_Digital_Music_5.json`             |
+   | Musical Instruments  | `reviews_Musical_Instruments_5.json`      |
+   | Instant Video        | `reviews_Amazon_Instant_Video_5.json`     |
+   | Video Games          | `reviews_Video_Games_5.json`              |
+   | Electronics          | `reviews_Electronics_5.json`              |
+   | Books                | `reviews_Books_5.json`                    |
+   | Home and Kitchen     | `reviews_Home_and_Kitchen_5.json`         |
+   | Movies and TV        | `reviews_Movies_and_TV_5.json`            |
