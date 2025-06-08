@@ -38,3 +38,31 @@ You need to prepare the following datasets before running RAREval:
    | Health and Personal Care |`reviews_Health_and_Personal_Care_5.json` |
    | CDs and Vinyl        | `reviews_CDs_and_Vinyl_5.json`            |
    | Movies and TV        | `reviews_Movies_and_TV_5.json`            |
+
+## Experiment Examples
+
+To run each RAREval experiment, simply execute the corresponding script:
+
+### 📌 No-Review
+```bash
+python no_review_processing.py
+```
+
+### 📌 Reduction
+```bash
+python reduction_processing.py
+```
+
+### 📌 Distortion
+```bash
+python distortion_processing.py
+```
+
+### 📌 Data Sparsity
+```bash
+python sparsity_processing.py
+```
+
+
+
+
