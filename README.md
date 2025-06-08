@@ -26,7 +26,7 @@ You need to prepare the following datasets before running RAREval:
 
    Please download the following **eight domains**, including:
    - The **5-core version**
-   - The **raw/original version** (no k-core filtering)
+   - The **raw version** (no k-core filtering)
 
    | Dataset              | Example Filename                          |
    |----------------------|--------------------------------------------|
