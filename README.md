@@ -60,7 +60,7 @@ python distortion_processing.py
 
 ### 📌 Data Sparsity
 ```bash
-python sparsity_processing.py
+python data_sparsity_kcore.py
 ```
 
 
