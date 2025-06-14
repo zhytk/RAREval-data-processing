@@ -1,9 +1,15 @@
 # RAREval-data-processing
 
+## 📘 Overview
+
 This repository provides the official code for the data preprocessing procedures introduced in our paper:  
 **Do Reviews Matter for Recommendations in the Era of Large Language Models?**
 
-RAREval is a standardized evaluation framework designed to assess the robustness and sensitivity of review-aware recommender systems under varying textual conditions, including:
+<p align="center">
+  <img src="images/RAREval_framework.png" alt="RAREval Framework" width="720"/>
+</p>
+
+The figure above presents the RAREval framework, which is designed to evaluate review-aware recommender systems under five distinct experimental conditions:
 
 - **No-Review**: Removes all textual reviews  
 - **Reduction**: Randomly removes a portion of review texts (0%, 25%, 50%, 75%, 100%)  
@@ -11,7 +17,8 @@ RAREval is a standardized evaluation framework designed to assess the robustness
 - **Data Sparsity**: Applies k-core filtering and splits into train/valid/test  
 - **Cold-Start**: Evaluates performance across user groups with 1–10 historical interactions (no preprocessing required)
 
----
+This repository provides a suite of scripts that generate modified datasets corresponding to the above five evaluation settings, enabling reproducible benchmarking and robustness analysis of large language model-based recommendation systems.
+
 
 ## 📦 Requirements
 
