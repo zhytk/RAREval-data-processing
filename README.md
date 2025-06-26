@@ -6,7 +6,7 @@ This repository provides the official code for the data preprocessing procedures
 **Do Reviews Matter for Recommendations in the Era of Large Language Models?**
 
 <p align="center">
-  <img src="https://github.com/zhytk/RAREval-data-processing/blob/main/RAREval_framework.png?raw=true" alt="RAREval Framework" width="720"/>
+  <img src="https://github.com/zhytk/RAREval-data-processing/blob/main/RAREval_framework.png?raw=true" alt="RAREval Framework" width="900"/>
 </p>
 
 
