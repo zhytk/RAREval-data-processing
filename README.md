@@ -86,7 +86,7 @@ An example output for the *Musical Instruments* domain is shown below:
 Training Frequency 0:  MSE = nan,     MAE = nan,     Count = 0
 Training Frequency 1:  MSE = 0.5833,  MAE = 0.4167,  Count = 12
 ...
-Training Frequency 35: MSE = 0.5000,  MAE = 0.5000,  Count = 2
+Training Frequency 10: MSE = 1.7273, MAE = 0.7273,Count = 22
 ```
 📄 Full output available in [examples/cold_start_example.txt](examples/cold_start_example.txt)
 
