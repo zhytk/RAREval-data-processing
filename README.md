@@ -1,5 +1,9 @@
 # RAREval-data-processing
-
+![python](https://img.shields.io/badge/python-%3E=3.8-blue)
+![pandas](https://img.shields.io/badge/pandas-%3E=1.5-blue)
+![numpy](https://img.shields.io/badge/numpy-%3E=1.23-blue)
+![transformers](https://img.shields.io/badge/transformers-4.45.2-orange)
+![peft](https://img.shields.io/badge/peft-0.12.0-green)
 ## 📘 Overview
 
 This repository provides the official code for the data preprocessing procedures introduced in our paper:  
@@ -20,15 +24,6 @@ The figure above presents the RAREval framework, which is designed to evaluate r
 
 This repository provides a suite of scripts that generate modified datasets corresponding to the above five evaluation settings, enabling reproducible benchmarking and robustness analysis of large language model-based recommendation systems.
 
-
-## 📦 Requirements
-
-Tested on Python 3.8
-
-1. [pandas](https://pypi.org/project/pandas/) ≥ 1.5  
-2. [numpy](https://pypi.org/project/numpy/) ≥ 1.23
-
----
 
 ## 📂 Dataset
 
