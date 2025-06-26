@@ -5,9 +5,9 @@
 This repository provides the official code for the data preprocessing procedures introduced in our paper:  
 **Do Reviews Matter for Recommendations in the Era of Large Language Models?**
 
-<p align="center">
+<div align="center">
   <img src="assets/RAREval_framework.png" alt="RAREval Framework" width="720"/>
-</p>
+</div>
 
 
 The figure above presents the RAREval framework, which is designed to evaluate review-aware recommender systems under five distinct experimental conditions:
