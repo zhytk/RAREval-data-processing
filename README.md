@@ -1,9 +1,5 @@
 # RAREval-data-processing
-![python](https://img.shields.io/badge/python-%3E=3.8-blue)
-![pandas](https://img.shields.io/badge/pandas-%3E=1.5-blue)
-![numpy](https://img.shields.io/badge/numpy-%3E=1.23-blue)
-![transformers](https://img.shields.io/badge/transformers-4.45.2-orange)
-![peft](https://img.shields.io/badge/peft-0.12.0-green)
+
 ## 📘 Overview
 
 This repository provides the official code for the data preprocessing procedures introduced in our paper:  
@@ -24,6 +20,33 @@ The figure above presents the RAREval framework, which is designed to evaluate r
 
 This repository provides a suite of scripts that generate modified datasets corresponding to the above five evaluation settings, enabling reproducible benchmarking and robustness analysis of large language model-based recommendation systems.
 
+## 📦 Requirements
+
+Tested on:  
+![python](https://img.shields.io/badge/python-%3E=3.8-blue)  
+
+### 📚 Core Libraries  
+![pandas](https://img.shields.io/badge/pandas-%3E=1.5-blue)
+![numpy](https://img.shields.io/badge/numpy-%3E=1.23-blue)
+![scipy](https://img.shields.io/badge/scipy-%3E=1.14.1-blue)
+![scikit--learn](https://img.shields.io/badge/scikit--learn-%3E=1.5.2-blue)
+![tqdm](https://img.shields.io/badge/tqdm-%3E=2.5.1-blue)
+
+### 🤗 HuggingFace & LLM Support  
+![transformers](https://img.shields.io/badge/transformers-4.45.2-green)
+![peft](https://img.shields.io/badge/peft-0.12.0-green)
+![accelerate](https://img.shields.io/badge/accelerate-%3E=1.1.1-green)
+![huggingface--hub](https://img.shields.io/badge/huggingface--hub-%3E=0.29.3-green)
+![datasets](https://img.shields.io/badge/datasets-%3E=3.0.0-green)
+![evaluate](https://img.shields.io/badge/evaluate-%3E=0.4.3-green)
+![bitsandbytes](https://img.shields.io/badge/bitsandbytes-%3E=0.43.1-green)
+
+### 🧠 Model Runtime Support  
+![torch](https://img.shields.io/badge/torch-%3E=2.5.1-red)
+![llama_cpp_python](https://img.shields.io/badge/llama__cpp__python-0.2.90-red)
+![lm--format--enforcer](https://img.shields.io/badge/lm--format--enforcer-%3E=0.10.10-red)
+
+---
 
 ## 📂 Dataset
 
