@@ -30,7 +30,7 @@ Tested on:
 ![numpy](https://img.shields.io/badge/numpy-%3E=1.23-blue)
 ![scipy](https://img.shields.io/badge/scipy-%3E=1.14.1-blue)
 ![scikit--learn](https://img.shields.io/badge/scikit--learn-%3E=1.5.2-blue)
-![tqdm](https://img.shields.io/badge/tqdm-%3E=2.5.1-blue)
+![tqdm](https://img.shields.io/badge/tqdm-%3E=4.66.4-blue)
 
 ### 🤗 HuggingFace & LLM Support  
 ![transformers](https://img.shields.io/badge/transformers-4.45.2-green)
