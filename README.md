@@ -54,24 +54,30 @@ You need to prepare the following datasets before running RAREval.
 
 🔗 Download from: [https://cseweb.ucsd.edu/~jmcauley/datasets/amazon/links.html](https://cseweb.ucsd.edu/~jmcauley/datasets/amazon/links.html)  
 
-Please download both the **5-core** and **raw** versions (no k-core filtering) for the following 8 domains:
+Please download both the **5-core** and **raw** versions (no k-core filtering) for the following 8 domains into the ```data/``` directory:
 
 | Dataset                  | Example Filename                          |
 |--------------------------|--------------------------------------------|
-| Musical Instruments      | `reviews_Musical_Instruments_5.json`      |
-| Amazon Instant Video     | `reviews_Amazon_Instant_Video_5.json`     |
-| Digital Music            | `reviews_Digital_Music_5.json`            |
-| Video Games              | `reviews_Video_Games_5.json`              |
-| Office Products          | `reviews_Office_Products_5.json`          |
-| Health and Personal Care | `reviews_Health_and_Personal_Care_5.json` |
-| CDs and Vinyl            | `reviews_CDs_and_Vinyl_5.json`            |
-| Movies and TV            | `reviews_Movies_and_TV_5.json`            |
+| Musical Instruments      | `Musical_Instruments_5.json`      |
+| Amazon Instant Video     | `Amazon_Instant_Video_5.json`     |
+| Digital Music            | `Digital_Music_5.json`            |
+| Video Games              | `Video_Games_5.json`              |
+| Office Products          | `Office_Products_5.json`          |
+| Health and Personal Care | `Health_and_Personal_Care_5.json` |
+| CDs and Vinyl            | `CDs_and_Vinyl_5.json`            |
+| Movies and TV            | `Movies_and_TV_5.json`            |
 
 ---
 
 ## 🔬 Experiment Examples
 
-To run each RAREval experiment, simply execute the corresponding script:
+To run each RAREval experiment, first execute ```train_valid_test_split.sh``` to split the data into training, validation and test set, as follows
+
+```bash
+./train_valid_test_split.sh
+```
+
+Then, execute the corresponding scripts:
 
 ### 📌 No-Review
 ```bash
