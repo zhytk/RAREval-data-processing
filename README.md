@@ -104,9 +104,15 @@ Example usage (change dataset_dir and llm as appropriate):
 ```bash
 python zero_shot.py --dataset_dir data/true-data/reviews_Musical_Instruments --llm qwen2.5:0.5b
 python few_shot.py --dataset_dir data/true-data/reviews_Musical_Instruments --llm qwen2.5:0.5b
+python zero_shot_slow.py --dataset_dir data/true-data/reviews_Musical_Instruments --llm qwen2.5:0.5b
+python few_shot_slow.py --dataset_dir data/true-data/reviews_Musical_Instruments --llm qwen2.5:0.5b
 ```
 
-The output will be a .jsonl file on the main project directory showing the user training frequency, the item training frequency, predicted rating, and actual rating. This can be used for cold start analysis.
+The slow version is only recommended for large language models that are not available in a single GGUF file.
+
+For our experiments, we ran the slow version for large language models containing at least 6 billion parameters, and the fast version otherwise. 
+
+The output will be a .jsonl file on the main project directory showing the user training frequency, the item training frequency, predicted rating, and actual rating. This can be used for cold start analysis, and does not require ```cold_start_evaluation.py```.
 
 ### 📌 LLM Summarization
 
