@@ -54,10 +54,10 @@ You need to prepare the following datasets before running RAREval.
 
 🔗 Download from: [https://cseweb.ucsd.edu/~jmcauley/datasets/amazon/links.html](https://cseweb.ucsd.edu/~jmcauley/datasets/amazon/links.html)  
 
-Please download both the **5-core** and **raw** versions (no k-core filtering) for the following 8 domains into the ```data/``` directory:
+Please download the **5-core** version for the following 8 domains into the ```data/``` directory, and likewise, the **raw reviews** or **0-core** version for the same 8 domains into the ```data/raw_reviews``` directory:
 
-| Dataset                  | Example Filename                          |
-|--------------------------|--------------------------------------------|
+| Dataset                  | Example Filename (5-core)         |
+|--------------------------|-----------------------------------|
 | Musical Instruments      | `Musical_Instruments_5.json`      |
 | Amazon Instant Video     | `Amazon_Instant_Video_5.json`     |
 | Digital Music            | `Digital_Music_5.json`            |
@@ -82,7 +82,6 @@ Then, execute the corresponding scripts:
 ### 📌 No-Review
 ```bash
 python no_review_processing.py
-
 ```
 
 ### 📌 Reduction
@@ -99,6 +98,22 @@ python distortion_processing.py
 ```bash
 python data_sparsity_kcore.py
 ```
+
+### 📌 Zero-shot and Few-shot
+Example usage (change dataset_dir and llm as appropriate):
+```bash
+python zero_shot.py --dataset_dir data/true-data/reviews_Musical_Instruments --llm qwen2.5:0.5b
+python few_shot.py --dataset_dir data/true-data/reviews_Musical_Instruments --llm qwen2.5:0.5b
+```
+
+The output will be a .jsonl file on the main project directory showing the user training frequency, the item training frequency, predicted rating, and actual rating. This can be used for cold start analysis.
+
+### 📌 LLM Summarization
+
+
+### 📌 LLM LoRA finetuning
+
+
 ### 📌 Cold-Start
 
 This setting requires no preprocessing script.
