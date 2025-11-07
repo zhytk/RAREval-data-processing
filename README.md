@@ -115,9 +115,20 @@ For our experiments, we ran the slow version for large language models containin
 The output will be a .jsonl file on the main project directory showing the user training frequency, the item training frequency, predicted rating, and actual rating. This can be used for cold start analysis, and does not require ```cold_start_evaluation.py```.
 
 ### 📌 LLM Summarization
+Example usage (change dataset_dir as appropriate):
+```bash
+python summarize_short.py --dataset_dir data/true-data/reviews_Musical_Instruments
+```
 
+The file ```summarize_short.py``` uses Llama 3.2 (1B) to extract important data from review text, before summarizing the extracted data in one sentence for use for fine-tuning.
+
+There is a file ```extract_only.py``` with similar usage that only does the extraction without summarizing the extracted data in one sentence. 
 
 ### 📌 LLM LoRA finetuning
+Example usage (change parameters as appropriate):
+```bash
+```
+
 
 
 ### 📌 Cold-Start
