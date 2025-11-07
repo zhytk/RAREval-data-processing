@@ -125,11 +125,12 @@ The file ```summarize_short.py``` uses Llama 3.2 (1B) to extract important data 
 There is a file ```extract_only.py``` with similar usage that only does the extraction without summarizing the extracted data in one sentence. 
 
 ### 📌 LLM LoRA finetuning
-Example usage (change parameters as appropriate):
+Example usage (change parameters as appropriate - loss functions supported are mse and mae):
 ```bash
+python llm_lora.py --dataset_dir data/true-data/reviews_Musical_Instruments --llm qwen2.5:0.5b --instance_id testing --batch_size 16 --gradient_accumulation_steps 4 --loss_function mse
 ```
 
-
+If you are running multiple instances of ```llm_lora.py```, please make sure instance_id is different to avoid overwriting the same save file while training different models.
 
 ### 📌 Cold-Start
 
